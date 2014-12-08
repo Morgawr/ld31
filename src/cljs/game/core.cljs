@@ -43,6 +43,5 @@
                                                       (novelette.screens.storyscreen/init  ctx  canvas
                                                        start-game))
         state (screen/State. [loading] 0 ctx canvas)]
-    (.log js/console (pr-str @input/BOUNDING-BOX))
     (input/init canvas)
     (screen/main-game-loop state)))
